@@ -1,15 +1,15 @@
 :root {
     /* Colores */
-    --color-primary: #2aaec9;
-    --color-primary-light: rgba(42, 174, 201, 0.3);
-    --color-primary-hover: rgb(2, 94, 112);
-    --color-background: #f0f0f0;
-    --color-background-2: #ebf3fa;
-    --color-selected:#bbecf7;
-    --color-text: #333333;
-    --color-text-light: #666666;
+    --color-primary: #2563eb;
+    --color-primary-light: rgba(37, 99, 235, 0.3);
+    --color-primary-hover: #1e40af;
+    --color-background: #121212;
+    --color-background-2: #1e1e2f;
+    --color-selected:#3b82f6;
+    --color-text: #e0e0e0;
+    --color-text-light: #a0a0a0;
     --color-white: #ffffff;
-    --color-gray-light: rgba(248, 249, 250, 0.8);
+    --color-gray-light: rgba(248, 249, 250, 0.2);
 
     /* Tipografía */
     --font-family-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;

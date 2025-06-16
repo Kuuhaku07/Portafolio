@@ -1,0 +1,50 @@
+[
+  {
+    "images": [
+      {
+        "preview": "https://i5.walmartimages.com/asr/c72049ed-022b-4c56-b9b0-c83fac3b2c01.4fbb3390b58458fb4b3eb671821cc893.jpeg",
+        "titulo": "Placeholder Image",
+        "descripcion": "Placeholder image description",
+        "es_portada": true
+      }
+    ],
+    "name": "Proyecto de ejemplo",
+    "description": "Este es un proyecto de ejemplo para mostrar el componente ProjectCard.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/" },
+      { "label": "Descarga", "url": "https://example.com/download" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "React" },
+      { "icon": null, "name": "Tailwind CSS" },
+      { "icon": null, "name": "Node.js" }
+    ]
+  },
+  {
+    "images": [
+      {
+        "preview": "https://http2.mlstatic.com/D_629212-MLM85370885974_062025-O.jpg",
+        "titulo": "Second Project Image 1",
+        "descripcion": "Second project image description 1",
+        "es_portada": true
+      },
+      {
+        "preview": "https://i.pinimg.com/736x/ef/e2/f8/efe2f8b0273c0f6bdcc87b41da1b3e2b.jpg",
+        "titulo": "Second Project Image 2",
+        "descripcion": "Second project image description 2",
+        "es_portada": false
+      }
+    ],
+    "name": "Segundo Proyecto de ejemplo",
+    "description": "Este es un segundo proyecto de ejemplo con múltiples imágenes.",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/secondproject" },
+      { "label": "Descarga", "url": "https://example.com/seconddownload" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "Vue.js" },
+      { "icon": null, "name": "Bootstrap" },
+      { "icon": null, "name": "Firebase" }
+    ]
+  }
+]

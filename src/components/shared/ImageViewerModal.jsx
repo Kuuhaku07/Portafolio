@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import ReactDOM from 'react-dom';
 import './ImageViewerModal.css';
 
 const ImageViewerModal = ({ isOpen, onClose, imageSrc, altText, caption, onPrev, onNext }) => {
@@ -79,7 +80,7 @@ const ImageViewerModal = ({ isOpen, onClose, imageSrc, altText, caption, onPrev,
     setDragging(false);
   };
 
-  return (
+  return ReactDOM.createPortal(
     <div className="image-viewer-overlay" onClick={handleOverlayClick}>
       <button
         className="image-viewer-close"
@@ -143,7 +144,8 @@ const ImageViewerModal = ({ isOpen, onClose, imageSrc, altText, caption, onPrev,
           </div>
         )}
       </div>
-    </div>
+    </div>,
+    document.body
   );
 };
 

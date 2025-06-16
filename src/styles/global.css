@@ -58,4 +58,31 @@ input {
 .mb-2 { margin-bottom: var(--spacing-sm); }
 .mb-3 { margin-bottom: var(--spacing-md); }
 .mb-4 { margin-bottom: var(--spacing-lg); }
-.mb-5 { margin-bottom: var(--spacing-xl); } 
+.mb-5 { margin-bottom: var(--spacing-xl); }
+
+/* Neon effect container */
+.neon-container {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  border: 2px solid #3b82f6;
+  box-shadow:
+    0 0 5px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 20px #3b82f6,
+    0 0 40px #2563eb;
+  color: #3b82f6;
+  padding: 20px;
+  border-radius: 12px;
+  text-shadow:
+    0 0 5px #3b82f6,
+    0 0 10px #3b82f6;
+}
+
+/* Neon effect text */
+.neon-text {
+  color: #3b82f6;
+  text-shadow:
+    0 0 5px #3b82f6,
+    0 0 10px #3b82f6,
+    0 0 20px #2563eb,
+    0 0 30px #2563eb;
+}
