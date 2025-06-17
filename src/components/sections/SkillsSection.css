@@ -55,6 +55,7 @@
 
 .university-container {
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   background-color: var(--color-background);
@@ -62,6 +63,17 @@
   border-radius: 8px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.1);
   margin-bottom: 12px;
+}
+
+.university-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.university-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .university-icon {

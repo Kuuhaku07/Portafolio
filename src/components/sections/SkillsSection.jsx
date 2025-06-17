@@ -5,6 +5,7 @@ import SkillBar from './SkillBar';
 import FlipCard from './FlipCard';
 import { SiPhp, SiPython, SiReact, SiJavascript, SiPostgresql, SiCplusplus, SiHtml5, SiCss3, SiAdobe} from 'react-icons/si';
 import { GiOrange} from 'react-icons/gi';
+import { FaUniversity } from 'react-icons/fa';
 import './SkillsSection.css';
 import './FlipCard.css';
 
@@ -12,13 +13,15 @@ const SkillsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const studiesCourses = [
-    'Programación Web',
-    'Bases de Datos',
-    'Estructuras de Datos',
-    'Sistemas Operativos',
-    'Redes de Computadoras',
-    'Inteligencia Artificial',
-    'Desarrollo de Software',
+    'Introducción a la Ciberseguridad (Cisco)',
+    'Cybersecurity Essentials (Cisco)',
+    'Packet tracer (Cisco) ',
+    'Python essentials 1.1 (Cisco)',
+    'Participación (2do lugar) Torneo de Programación 2024-1 UGMA',
+    'Ingles básico segundo semestre en CEBA-UCV',
+    'Redacción de Informes técnicos (INCES)',
+    'Básico de supervisión (INCES)',
+    'Inteligencia Emocional (PDVSA GAS)'
   ];
 
   const languages = [
@@ -65,13 +68,17 @@ const SkillsSection = () => {
       <div className="skills-container">
         <div className="left-column">
           <div className="studies-section">
-            <h2>Estudios</h2>
-            <p>Ingeniería en Informática</p>
-            <p>Universidad Gran Mariscal de Ayacucho</p>
+            <h2><FaUniversity className="university-icon" />Estudios</h2>
+            <h3>Carrera Universitaria</h3>
+            <div className="university-container">
+              <p>Ingeniería en Informática</p>
+              <p>Universidad Gran Mariscal de Ayacucho</p>
+            </div>
+
             <button className="modal-open-button" onClick={() => setIsModalOpen(true)}>
               Ver cursos
             </button>
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Cursos de Ingeniería en Informática">
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Cursos Realizados y Reconocimientos">
               <ul className="courses-list">
                 {studiesCourses.map((course, index) => (
                   <li key={index}>{course}</li>
