@@ -37,7 +37,7 @@
     "description": "Pagina para el registro y gestion de inmuebles de la empresa Asesores de Oriente, donde se puede llevar un control de los inmuebles, clientes y ventas. Ademas de poseer un sistema de registro de usuarios.",
     "ribbonLabel": "En curso",
     "links": [
-      { "label": "Informe", "url": "https://drive.google.com/file/d/1sWpQoQJ6VPaPVpwpr_ZU6GObxQcBWaff/view?usp=sharing" }
+      { "label": "Proximamente", "url": "" }
     ],
     "technologies": [
       { "icon": null, "name": "Javascript" },
@@ -125,5 +125,5 @@
       { "icon": null, "name": "PostgreSQL" },
       { "icon": null, "name": "Laragon" }
     ]
-  }]
-
+  } 
+]
