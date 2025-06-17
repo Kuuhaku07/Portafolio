@@ -29,14 +29,14 @@ const ProjectCard = ({ images, name, description, links, technologies, ribbonLab
         </div>
         <div className="project-technologies">
           <h4>Desarrollado en</h4>
-          <div className="technology-list">
-            {technologies.map(({ icon: Icon, name: techName }, index) => (
-              <div key={index} className="technology-item" title={techName}>
-                {Icon && <Icon className="technology-icon" />}
-                <span className="technology-name">{techName}</span>
-              </div>
-            ))}
-          </div>
+        <div className="technology-list">
+          {technologies.map(({ icon: Icon, name: techName, color }, index) => (
+            <div key={index} className="technology-item" title={techName}>
+              {Icon && <Icon className="technology-icon" style={{ color: color || 'inherit' }} />}
+              <span className="technology-name">{techName}</span>
+            </div>
+          ))}
+        </div>
         </div>
       </div>
     </div>

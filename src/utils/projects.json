@@ -2,51 +2,80 @@
   {
     "images": [
       {
-        "preview": "https://i5.walmartimages.com/asr/c72049ed-022b-4c56-b9b0-c83fac3b2c01.4fbb3390b58458fb4b3eb671821cc893.jpeg",
-        "titulo": "Placeholder Image",
+        "preview": "https://i.postimg.cc/50QqbJ9P/imagen-2025-06-17-121611078.png",
+        "titulo": "Pantalla principal del proyecto",
         "descripcion": "Placeholder image description",
         "es_portada": true
+      },      {
+        "preview": "https://i.postimg.cc/yNbXMxKg/Screenshot-1.jpg",
+        "titulo": "Pantalla de configuraciones",
+        "descripcion": "Placeholder image description",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/764YYMwp/imagen-2025-06-17-122341816.png",
+        "titulo": "Pantalla de inicio de sesión",
+        "descripcion": "Placeholder image description",
+        "es_portada": false
       }
     ],
-    "name": "Proyecto de ejemplo",
-    "description": "Este es un proyecto de ejemplo para mostrar el componente ProjectCard.",
+    "name": "Gestor de documentos",
+    "description": "Programa portable que permite gestionar los documentos y fechas de los proyectos de la empresa. Manejando un sistema de encriptamiento local para el almacenamiento de los documentos.",
     "ribbonLabel": "Encargo",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/" },
-      { "label": "Descarga", "url": "https://example.com/download" }
+      { "label": "GitHub", "url": "https://github.com/Kuuhaku07/Gestion-de-Proyectos" },
+      { "label": "Descarga", "url": "https://github.com/Kuuhaku07/Gestion-de-Proyectos/blob/main/dist/GestorDocumentos.exe" }
     ],
     "technologies": [
-      { "icon": null, "name": "React" },
-      { "icon": null, "name": "Tailwind CSS" },
-      { "icon": null, "name": "Node.js" }
+      { "icon": null, "name": "Python" },
+      { "icon": null, "name": "SQlite" },
+      { "icon": null, "name": "Flet" }
     ]
   },
   {
     "images": [
       {
-        "preview": "https://http2.mlstatic.com/D_629212-MLM85370885974_062025-O.jpg",
-        "titulo": "Second Project Image 1",
-        "descripcion": "Second project image description 1",
+        "preview": "https://i.postimg.cc/SQYRTGPw/imagen-2025-06-17-122832211.png",
+        "titulo": "Pantalla de inicio de sesión",
+        "descripcion": "Pantalla de inicio de sesión",
         "es_portada": true
       },
       {
-        "preview": "https://i.pinimg.com/736x/ef/e2/f8/efe2f8b0273c0f6bdcc87b41da1b3e2b.jpg",
-        "titulo": "Second Project Image 2",
-        "descripcion": "Second project image description 2",
+        "preview": "https://i.postimg.cc/cJ51TKBx/imagen-2025-06-17-122932621.png",
+        "titulo": "Pantalla principal del proyecto",
+        "descripcion": " Pantalla de inicio del usuario",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/ZqvXtChK/imagen-2025-06-17-123331822.png",
+        "titulo": "Formulario de registrar empresa",
+        "descripcion": " ",
+        "es_portada": false
+      },
+            {
+        "preview": "https://i.postimg.cc/BbPj25Wf/imagen-2025-06-17-123738100.png",
+        "titulo": "Lista de contratos en Modificar Contrato",
+        "descripcion": " ",
+        "es_portada": false
+      },
+            {
+        "preview": "https://i.postimg.cc/zGc4cT6c/imagen-2025-06-17-123145123.png",
+        "titulo": "Generacion de PDF",
+        "descripcion": " ",
         "es_portada": false
       }
     ],
-    "name": "Segundo Proyecto de ejemplo",
-    "description": "Este es un segundo proyecto de ejemplo con múltiples imágenes.",
-    "ribbonLabel": "En curso",
+    "name": "Pasantia en PDVSA GAS: GESCOMET",
+    "description": "Pasantia que consistia en un sistema de gestión de contratos para la gerencia de negocios y contratos de PDVSA GAS.",
     "links": [
-      { "label": "GitHub", "url": "https://github.com/secondproject" },
-      { "label": "Descarga", "url": "https://example.com/seconddownload" }
+      { "label": "Informe", "url": "https://drive.google.com/file/d/1sWpQoQJ6VPaPVpwpr_ZU6GObxQcBWaff/view?usp=sharing" }
     ],
     "technologies": [
-      { "icon": null, "name": "Vue.js" },
-      { "icon": null, "name": "Bootstrap" },
-      { "icon": null, "name": "Firebase" }
+      { "icon": null, "name": "PHP" },
+      { "icon": null, "name": "CSS" },
+      { "icon": null, "name": "Javascript" },
+      { "icon": null, "name": "PostgreSQL" },
+      { "icon": null, "name": "Laragon" }
     ]
   }
 ]

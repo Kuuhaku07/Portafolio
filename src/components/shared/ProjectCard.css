@@ -25,12 +25,16 @@
   overflow: visible;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  background-color: var(--color-background); /* Match card background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .project-images img {
   object-fit: contain;
   max-height: none;
-  width: 100%;
+  width: auto;
   max-width: 100%;
   border-radius: 12px;
 }
@@ -47,6 +51,7 @@
   color: var(--color-primary);
   text-transform: uppercase;
   letter-spacing: 1px;
+  line-height: 1.1; /* Reduced line height for less interline spacing */
 }
 
 .project-description {
@@ -104,7 +109,7 @@
 .technology-icon {
   width: 22px;
   height: 22px;
-  fill: var(--color-primary);
+  fill: currentColor;
 }
 
 .project-ribbon {

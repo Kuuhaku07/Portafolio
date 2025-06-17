@@ -187,7 +187,7 @@ const ImageGallery = ({
               position: 'relative',
               overflow: 'hidden',
               borderRadius: '8px',
-              backgroundColor: '#f0f0f0',
+              backgroundColor: '#121212',
             }}
           >
             <img
