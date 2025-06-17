@@ -1,4 +1,52 @@
 [
+
+    {
+    "images": [
+      {
+        "preview": "https://i.postimg.cc/F1twKvgX/imagen-2025-06-17-131643276.png",
+        "titulo": "Pantalla de inicio",
+        "descripcion": "",
+        "es_portada": true
+      },
+      {
+        "preview": "https://i.postimg.cc/RFJBCg5f/imagen-2025-06-17-131902040.png",
+        "titulo": "Crear Inmueble",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/DfcCJqvb/imagen-2025-06-17-132438709.png",
+        "titulo": "Modificar Inmueble",
+        "descripcion": " ",
+        "es_portada": false
+      },
+            {
+        "preview": "https://i.postimg.cc/BbPj25Wf/imagen-2025-06-17-123738100.png",
+        "titulo": "Lista de contratos en Modificar Contrato",
+        "descripcion": " ",
+        "es_portada": false
+      },
+            {
+        "preview": "https://i.postimg.cc/zGc4cT6c/imagen-2025-06-17-123145123.png",
+        "titulo": "Generacion de PDF",
+        "descripcion": " ",
+        "es_portada": false
+      }
+    ],
+    "name": "Pagina Web de Asesores de Oriente",
+    "description": "Pagina para el registro y gestion de inmuebles de la empresa Asesores de Oriente, donde se puede llevar un control de los inmuebles, clientes y ventas. Ademas de poseer un sistema de registro de usuarios.",
+    "ribbonLabel": "En curso",
+    "links": [
+      { "label": "Informe", "url": "https://drive.google.com/file/d/1sWpQoQJ6VPaPVpwpr_ZU6GObxQcBWaff/view?usp=sharing" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "Javascript" },
+      { "icon": null, "name": "React" },
+      { "icon": null, "name": "PostgreSQL" },
+      { "icon": null, "name": "Python" }
+    ]
+  },
+
   {
     "images": [
       {
@@ -77,5 +125,5 @@
       { "icon": null, "name": "PostgreSQL" },
       { "icon": null, "name": "Laragon" }
     ]
-  }
-]
+  }]
+

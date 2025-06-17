@@ -2,7 +2,7 @@ import React from 'react';
 import ProjectCard from '../shared/ProjectCard';
 import ProjectContainer from '../shared/ProjectContainer';
 import projects from '../../utils/projects.json';
-import { FaGithub, FaDownload, FaPhp, FaCss3Alt, FaJsSquare, FaDatabase, FaPython } from 'react-icons/fa';
+import { FaGithub, FaDownload, FaPhp, FaCss3Alt, FaJsSquare, FaDatabase, FaPython, FaReact } from 'react-icons/fa';
 import { SiLaragon, SiFlutter, SiSqlite } from 'react-icons/si';
 
 const iconMap = {
@@ -15,6 +15,7 @@ const iconMap = {
   'flet': { icon: SiFlutter, color: '#02569B' },
   'python': { icon: FaPython, color: '#3776AB' },
   'sqlite': { icon: SiSqlite, color: '#003B57' },
+  'react': { icon: FaReact, color: '#61DAFB' },
 };
 
 const ProjectSection = () => {
