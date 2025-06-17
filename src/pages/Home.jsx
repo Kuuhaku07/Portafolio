@@ -3,6 +3,8 @@ import CopyButton from '../components/shared/CopyButton';
 import ToastContainer from '../components/shared/ToastContainer';
 import ProjectCard from '../components/shared/ProjectCard';
 import ProjectContainer from '../components/shared/ProjectContainer';
+import About from '../components/sections/About';
+import BannerSection from '../components/sections/BannerSection';
 import { FaGithub, FaDownload } from 'react-icons/fa';
 import projects from '../utils/projects.json';
 
@@ -34,16 +36,8 @@ const Home = () => {
 
   return (
     <div>
-      <h1>Portfolio Main Page Placeholder</h1>
-      <p>This is the main page of the portfolio.</p>
-
-      <CopyButton
-        textToCopy="Texto de ejemplo para copiar"
-        onCopy={handleCopy}
-        buttonColor="#007bff"
-        size="medium"
-        ariaLabel="Copiar texto de ejemplo"
-      />
+      <BannerSection />
+      <About />
 
       <ProjectContainer title="Mis Proyectos">
         {projectsWithIcons.map((project, index) => (
