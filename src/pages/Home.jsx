@@ -5,6 +5,7 @@ import ProjectCard from '../components/shared/ProjectCard';
 import ProjectContainer from '../components/shared/ProjectContainer';
 import About from '../components/sections/About';
 import BannerSection from '../components/sections/BannerSection';
+import SkillsSection from '../components/sections/SkillsSection';
 import { FaGithub, FaDownload } from 'react-icons/fa';
 import projects from '../utils/projects.json';
 
@@ -38,6 +39,7 @@ const Home = () => {
     <div>
       <BannerSection />
       <About />
+      <SkillsSection />
 
       <ProjectContainer title="Mis Proyectos">
         {projectsWithIcons.map((project, index) => (
