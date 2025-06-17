@@ -51,6 +51,7 @@ const SkillsSection = () => {
     'Herramientas de IA',
     'Visual Studio Code',
     'Packet Tracer',
+    'Unity'
   ];
 
   const knowledge = [

@@ -9,6 +9,9 @@
   max-width: 400px;
   color: var(--color-text);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative; /* Añade esto para contener el ribbon */
+  overflow: visible; /* Asegúrate de que no esté recortando el ribbon */
+  
 }
 
 .project-card:hover {
@@ -102,4 +105,71 @@
   width: 22px;
   height: 22px;
   fill: var(--color-primary);
+}
+
+.project-ribbon {
+  width: 120px;
+  height: 120px;
+  overflow: visible; /* Cambiado a visible para mostrar la cinta */
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+  pointer-events: none; /* Mejor que auto para evitar interferencias */
+}
+
+.project-ribbon span {
+  position: absolute;
+  display: block;
+  width: 160px;
+  padding: 8px 0; /* Reducido un poco el padding */
+  background-color: var(--color-primary);
+  color: white;
+  font-weight: 700;
+  font-size: 0.7rem; /* Tamaño ligeramente menor */
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; /* Mejor legibilidad */
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2); /* Sombra más pronunciada */
+  transform: rotate(45deg);
+  top: 30px; /* Ajustado posición vertical */
+  right: -40px;
+  font-family: 'Segoe UI', sans-serif; /* O usa tu fuente principal */
+  text-shadow: 0 1px 1px rgba(0,0,0,0.2);
+}
+
+.project-ribbon span::before,
+.project-ribbon span::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: inherit;
+  bottom: -5px;
+  z-index: -1;
+}
+
+.project-ribbon span::before {
+  left: 0;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.project-ribbon span::after {
+  right: 0;
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+
+.project-ribbon.personal span {
+  background-color: #4CAF50;
+  background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
+}
+
+.project-ribbon.encargo span {
+  background-color: #2196F3;
+  background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
+}
+
+.project-ribbon.en-curso span {
+  background-color: #FF9800;
+  background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
 }

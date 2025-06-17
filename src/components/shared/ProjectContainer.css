@@ -17,11 +17,12 @@
 
 .project-container-scroll {
   display: flex;
-  overflow-x: auto;
-  gap: var(--spacing-md);
+  overflow-x: visible; 
+  gap: 2.5rem; /* Increased gap slightly to prevent ribbon overlap */
   padding-bottom: var(--spacing-sm);
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  padding-right: 60px; /* Added padding to prevent ribbon overlap */
 }
 
 .project-container-scroll::-webkit-scrollbar {

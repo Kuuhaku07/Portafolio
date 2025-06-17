@@ -10,6 +10,7 @@
     ],
     "name": "Proyecto de ejemplo",
     "description": "Este es un proyecto de ejemplo para mostrar el componente ProjectCard.",
+    "ribbonLabel": "Encargo",
     "links": [
       { "label": "GitHub", "url": "https://github.com/" },
       { "label": "Descarga", "url": "https://example.com/download" }
@@ -37,6 +38,7 @@
     ],
     "name": "Segundo Proyecto de ejemplo",
     "description": "Este es un segundo proyecto de ejemplo con múltiples imágenes.",
+    "ribbonLabel": "En curso",
     "links": [
       { "label": "GitHub", "url": "https://github.com/secondproject" },
       { "label": "Descarga", "url": "https://example.com/seconddownload" }

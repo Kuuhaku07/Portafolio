@@ -3,9 +3,11 @@ import PropTypes from 'prop-types';
 import ImageGallery from './ImageGallery';
 import './ProjectCard.css';
 
-const ProjectCard = ({ images, name, description, links, technologies }) => {
+const ProjectCard = ({ images, name, description, links, technologies, ribbonLabel }) => {
+  const ribbonClass = ribbonLabel ? ribbonLabel.toLowerCase().replace(/\s+/g, '-') : '';
   return (
     <div className="project-card">
+      {ribbonLabel && <div className={`project-ribbon ${ribbonClass}`} ><span>{ribbonLabel}</span></div>}
       <div className="project-images">
         <ImageGallery images={images} mode="display" thumbnailSize={100} labels={{ bannerSelector: true }} />
       </div>
