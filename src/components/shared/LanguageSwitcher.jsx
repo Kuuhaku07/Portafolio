@@ -4,7 +4,7 @@ import './LanguageSwitcher.css';
 
 const LanguageSwitcher = () => {
   const { language, toggleLanguage } = useLanguage();
-  const [isHovered, setIsHovered] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const sections = [
     { id: 'about', label: language === 'es' ? 'Acerca de' : 'About' },
@@ -17,25 +17,34 @@ const LanguageSwitcher = () => {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
     }
+    setMenuOpen(false); // close menu on selection
   };
 
   return (
     <div
       className="language-switcher-container"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{ opacity: isHovered ? 1 : 0.5, transition: 'opacity 0.3s ease' }}
+      style={{ opacity: menuOpen ? 1 : 0.8, transition: 'opacity 0.3s ease' }}
     >
       <div className="language-switcher-bar">
         <button
           className={language === 'es' ? 'active' : ''}
-          onClick={() => toggleLanguage()}
+          onClick={() => {
+            toggleLanguage();
+            setMenuOpen(false);
+          }}
           aria-label="Toggle language"
         >
           {language === 'es' ? 'ES' : 'EN'}
         </button>
+        <button
+          className="menu-toggle-button"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          ☰
+        </button>
       </div>
-      {isHovered && (
+      {menuOpen && (
         <div className="language-switcher-menu">
           <div className="section-links">
             {sections.map((section) => (

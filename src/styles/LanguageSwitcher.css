@@ -16,6 +16,18 @@
   user-select: none;
   text-align: center;
   font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-toggle-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 0 8px;
 }
 
 .language-switcher-menu {
@@ -51,4 +63,22 @@
 .language-options button:hover,
 .section-links button:hover {
   background-color: rgba(68, 68, 68, 0.8);
+}
+
+/* Mobile styles */
+@media (max-width: 600px) {
+  .language-switcher-menu {
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 16px;
+  }
+
+  .language-switcher-menu .section-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .language-switcher-bar {
+    padding: 8px 12px;
+  }
 }

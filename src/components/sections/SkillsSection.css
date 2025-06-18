@@ -53,6 +53,26 @@
   flex: none;
 }
 
+/* Mobile styles */
+@media (max-width: 768px) {
+  .skills-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .left-column,
+  .right-column {
+    flex: none;
+    width: 100%;
+  }
+
+  .right-top-row,
+  .right-bottom-row {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
 .university-container {
   display: flex;
   flex-direction: row;
