@@ -1,9 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from './ImageGallery';
+import { useLanguage } from '../../utils/LanguageContext';
+import en from '../../utils/lang/en';
+import es from '../../utils/lang/es';
 import './ProjectCard.css';
 
 const ProjectCard = ({ images, name, description, links, technologies, ribbonLabel }) => {
+  const { language } = useLanguage();
+  const lang = language === 'es' ? es : en;
   const ribbonClass = ribbonLabel ? ribbonLabel.toLowerCase().replace(/\s+/g, '-') : '';
   return (
     <div className="project-card">
@@ -28,7 +33,7 @@ const ProjectCard = ({ images, name, description, links, technologies, ribbonLab
           ))}
         </div>
         <div className="project-technologies">
-          <h4>Desarrollado en</h4>
+          <h4>{lang.projects.developedIn || 'Desarrollado en'}</h4>
         <div className="technology-list">
           {technologies.map(({ icon: Icon, name: techName, color }, index) => (
             <div key={index} className="technology-item" title={techName}>
@@ -42,6 +47,7 @@ const ProjectCard = ({ images, name, description, links, technologies, ribbonLab
     </div>
   );
 };
+
 
 ProjectCard.propTypes = {
   images: PropTypes.arrayOf(

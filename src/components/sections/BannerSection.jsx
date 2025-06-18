@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { useLanguage } from '../../utils/LanguageContext';
 import bannerImages from '../../utils/bannerImages.json';
 import './BannerSection.css';
 
 const BannerSection = () => {
-  // Extract all images from all projects into a single array
+  const { language } = useLanguage();
   const images = bannerImages;
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -30,8 +31,8 @@ const BannerSection = () => {
           loading="lazy"
         />
         <div className="banner-text">
-          <h1>Ulises Lugo</h1>
-          <h2>Desarrollador Full Stack</h2>
+          <h1>{language === 'es' ? 'Ulises Lugo' : 'Ulises Lugo'}</h1>
+          <h2>{language === 'es' ? 'Desarrollador Full Stack' : 'Full Stack Developer'}</h2>
         </div>
       </div>
     </section>

@@ -1,0 +1,54 @@
+.language-switcher-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: white;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+  transition: opacity 0.3s ease;
+}
+
+.language-switcher-bar {
+  padding: 8px 16px;
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  font-weight: bold;
+}
+
+.language-switcher-menu {
+  background-color: rgba(51, 51, 51, 0.9);
+  display: flex;
+  justify-content: center;
+  padding: 8px 0;
+  gap: 20px;
+}
+
+.language-switcher-menu .section-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.language-options button,
+.section-links button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.language-options button.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.language-options button:hover,
+.section-links button:hover {
+  background-color: rgba(68, 68, 68, 0.8);
+}

@@ -8,26 +8,18 @@ import { GiOrange} from 'react-icons/gi';
 import { FaUniversity } from 'react-icons/fa';
 import './SkillsSection.css';
 import './FlipCard.css';
+import { useLanguage } from '../../utils/LanguageContext';
+import en from '../../utils/lang/en';
+import es from '../../utils/lang/es';
+
 
 const SkillsSection = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const { language } = useLanguage();
+  const lang = language === 'es' ? es : en;
 
-  const studiesCourses = [
-    'Introducción a la Ciberseguridad (Cisco)',
-    'Cybersecurity Essentials (Cisco)',
-    'Packet tracer (Cisco) ',
-    'Python essentials 1.1 (Cisco)',
-    'Participación (2do lugar) Torneo de Programación 2024-1 UGMA',
-    'Ingles básico segundo semestre en CEBA-UCV',
-    'Redacción de Informes técnicos (INCES)',
-    'Básico de supervisión (INCES)',
-    'Inteligencia Emocional (PDVSA GAS)'
-  ];
-
-  const languages = [
-    { skill: 'Español', level: 10 },
-    { skill: 'Inglés', level: 7 },
-  ];
+  const studiesCourses = lang.skills.studiesCourses;
+  const languages = lang.skills.languagesList;
 
   const programming = [
     { skill: 'PHP', level: 9, logo: <SiPhp size={48} color="#777bb3" /> },
@@ -45,41 +37,26 @@ const SkillsSection = () => {
     { skill: 'Autocad', level: 6, logo: <SiAdobe size={48} color="#ff0000" /> },
   ];
 
-  const tools = [
-    'Git + GitHub',
-    'Consola de comandos',
-    'Herramientas de IA',
-    'Visual Studio Code',
-    'Packet Tracer',
-    'Unity'
-  ];
-
-  const knowledge = [
-    'Diseño de algoritmos y estructuras de datos',
-    'Diseño de interfaces de usuario',
-    'Bases de datos relacionales',
-    'Diseño de redes',
-    'Desarrollo ágil de software',
-  ];
+  const tools = lang.skills.toolsList;
+  const knowledge = lang.skills.knowledgeList;
 
   return (
-    <section className="skills-section">
-      <h1 className="skills-title">Habilidades y Estudios</h1>
+<section id="skills-section" className="skills-section">
+  <h1 className="skills-title">{lang.skills.title}</h1>
 
       <div className="skills-container">
         <div className="left-column">
           <div className="studies-section">
-            <h2><FaUniversity className="university-icon" />Estudios</h2>
-            <h3>Carrera Universitaria</h3>
+            <h2><FaUniversity className="university-icon" />{lang.skills.studies}</h2>
+            <h3>{lang.skills.universityCareer}</h3>
             <div className="university-container">
-              <p>Ingeniería en Informática</p>
-              <p>Universidad Gran Mariscal de Ayacucho</p>
+              <p>{lang.skills.universityName}</p>
             </div>
 
             <button className="modal-open-button" onClick={() => setIsModalOpen(true)}>
-              Ver cursos
+              {lang.skills.viewCourses}
             </button>
-            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title="Cursos Realizados y Reconocimientos">
+            <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title={lang.skills.coursesTitle}>
               <ul className="courses-list">
                 {studiesCourses.map((course, index) => (
                   <li key={index}>{course}</li>
@@ -89,7 +66,7 @@ const SkillsSection = () => {
           </div>
 
           <div className="skills-category">
-            <h3>Idiomas</h3>
+            <h3>{lang.skills.languages}</h3>
             {languages.map(({ skill, level }) => (
               <SkillBar key={skill} skill={skill} level={level} />
             ))}
@@ -99,7 +76,7 @@ const SkillsSection = () => {
         <div className="right-column">
           <div className="right-top-row">
             <div className="skills-category flipcard-container">
-              <h3>Programación</h3>
+              <h3>{lang.skills.programming}</h3>
               <div className="flipcard-grid">
                 {programming.map(({ skill, logo }) => (
                   <FlipCard
@@ -112,7 +89,7 @@ const SkillsSection = () => {
             </div>
 
             <div className="skills-category flipcard-container">
-              <h3>Diseño</h3>
+              <h3>{lang.skills.design}</h3>
               <div className="flipcard-grid">
                 {design.map(({ skill, logo }) => (
                   <FlipCard
@@ -127,7 +104,7 @@ const SkillsSection = () => {
 
           <div className="right-bottom-row">
             <div className="skills-category">
-              <h3>Herramientas</h3>
+              <h3>{lang.skills.tools}</h3>
               <ul>
                 {tools.map((tool, index) => (
                   <li key={index}>{tool}</li>
@@ -136,7 +113,7 @@ const SkillsSection = () => {
             </div>
 
             <div className="skills-category">
-              <h3>Conocimiento</h3>
+              <h3>{lang.skills.knowledge}</h3>
               <ul>
                 {knowledge.map((item, index) => (
                   <li key={index}>{item}</li>

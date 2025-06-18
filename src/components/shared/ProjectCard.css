@@ -169,12 +169,12 @@
   background: linear-gradient(135deg, #4CAF50 0%, #388E3C 100%);
 }
 
-.project-ribbon.encargo span {
+.project-ribbon.encargo span,.project-ribbon.commission span {
   background-color: #2196F3;
   background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%);
 }
 
-.project-ribbon.en-curso span {
+.project-ribbon.en-curso span,.project-ribbon.in-progress span {
   background-color: #FF9800;
   background: linear-gradient(135deg, #FF9800 0%, #F57C00 100%);
 }

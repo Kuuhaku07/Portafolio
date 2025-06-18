@@ -1,7 +1,9 @@
 import React from 'react';
 import ProjectCard from '../shared/ProjectCard';
 import ProjectContainer from '../shared/ProjectContainer';
-import projects from '../../utils/projects.json';
+import { useLanguage } from '../../utils/LanguageContext';
+import projectsEs from '../../utils/projects.json';
+import projectsEn from '../../utils/projects.en.json';
 import { FaGithub, FaDownload, FaPhp, FaCss3Alt, FaJsSquare, FaDatabase, FaPython, FaReact } from 'react-icons/fa';
 import { SiLaragon, SiFlutter, SiSqlite } from 'react-icons/si';
 
@@ -19,6 +21,9 @@ const iconMap = {
 };
 
 const ProjectSection = () => {
+  const { language } = useLanguage();
+  const projects = language === 'es' ? projectsEs : projectsEn;
+
   // Map projects from JSON and add icons to links and technologies with colors
   const projectsWithIcons = projects.map(project => ({
     ...project,
@@ -29,7 +34,9 @@ const ProjectSection = () => {
         icon = <FaGithub />;
       } else if (
         link.label.toLowerCase().includes('descarga') ||
-        link.label.toLowerCase().includes('informe')
+        link.label.toLowerCase().includes('informe') ||
+        link.label.toLowerCase().includes('download') ||
+        link.label.toLowerCase().includes('report')
       ) {
         icon = <FaDownload />;
       }
@@ -49,7 +56,8 @@ const ProjectSection = () => {
   }));
 
   return (
-    <ProjectContainer title="Mis Proyectos">
+    <section id="project-section" >
+    <ProjectContainer  title={language === 'es' ? "Mis Proyectos" : "My Projects"}>
       {projectsWithIcons.map((project, index) => (
         <ProjectCard
           key={index}
@@ -62,7 +70,8 @@ const ProjectSection = () => {
         />
       ))}
     </ProjectContainer>
-  );
+    </section>
+);
 };
 
 export default ProjectSection;

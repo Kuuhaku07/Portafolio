@@ -1,15 +1,21 @@
 import React from 'react';
 import { FaDownload, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 import styles from '../../styles/About.module.css';
+import { useLanguage } from '../../utils/LanguageContext';
+import en from '../../utils/lang/en';
+import es from '../../utils/lang/es';
 
 const About = () => {
+  const { language } = useLanguage();
+  const lang = language === 'es' ? es : en;
+
   return (
     <section id="about" className={styles.about}>
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <img
             src="/images/profile.jpg"
-            alt="Foto de Ulises Lugo"
+            alt={lang.about.name}
             className={styles.profileImage}
             onError={(e) => {
               e.target.onerror = null;
@@ -19,14 +25,10 @@ const About = () => {
         </div>
 
         <div className={styles.text}>
-          <h2 className={styles.title}>Ulises Lugo</h2>
-          <h3 className={styles.subtitle}>Desarrollador Full Stack</h3>
+          <h2 className={styles.title}>{lang.about.name}</h2>
+          <h3 className={styles.subtitle}>{lang.about.subtitle}</h3>
           <p className={styles.description}>
-            Soy un apasionado por crear soluciones digitales funcionales y atractivas. 
-            Con un amplio conocimiento en <strong>Python, React, PHP, PostgreSQL y CSS</strong>, 
-            y experiencia en desarrollo de aplicaciones web, scripts y sistemas de informacion. 
-            Me gusta trabajar en proyectos grandes y pequeños, siempre buscando 
-            mejorar mis habilidades y conocimientos.
+            {lang.about.description}
           </p>
 
           <div className={styles.actions}>
@@ -36,7 +38,7 @@ const About = () => {
               rel="noopener noreferrer"
               className={styles.cvButton}
             >
-              <FaDownload /> Descargar CV
+              <FaDownload /> {lang.about.downloadCV}
             </a>
             <div className={styles.socialLinks}>
               <a href="https://github.com/Kuuhaku07" target="_blank" rel="noopener noreferrer">

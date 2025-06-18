@@ -1,0 +1,128 @@
+[
+  {
+    "images": [
+      {
+        "preview": "https://i.postimg.cc/F1twKvgX/imagen-2025-06-17-131643276.png",
+        "titulo": "Home Screen",
+        "descripcion": "",
+        "es_portada": true
+      },
+      {
+        "preview": "https://i.postimg.cc/RFJBCg5f/imagen-2025-06-17-131902040.png",
+        "titulo": "Create Property",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/DfcCJqvb/imagen-2025-06-17-132438709.png",
+        "titulo": "Modify Property",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/BbPj25Wf/imagen-2025-06-17-123738100.png",
+        "titulo": "Contract List in Modify Contract",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/zGc4cT6c/imagen-2025-06-17-123145123.png",
+        "titulo": "PDF Generation",
+        "descripcion": " ",
+        "es_portada": false
+      }
+    ],
+    "name": "Oriente Advisors Website",
+    "description": "Website for registering and managing properties for the company Oriente Advisors, where properties, clients, and sales can be controlled. Also includes a user registration system.",
+    "ribbonLabel": "In Progress",
+    "links": [
+      { "label": "Coming Soon", "url": "" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "Javascript" },
+      { "icon": null, "name": "React" },
+      { "icon": null, "name": "PostgreSQL" },
+      { "icon": null, "name": "Python" }
+    ]
+  },
+  {
+    "images": [
+      {
+        "preview": "https://i.postimg.cc/50QqbJ9P/imagen-2025-06-17-121611078.png",
+        "titulo": "Main Project Screen",
+        "descripcion": "Placeholder image description",
+        "es_portada": true
+      },
+      {
+        "preview": "https://i.postimg.cc/yNbXMxKg/Screenshot-1.jpg",
+        "titulo": "Settings Screen",
+        "descripcion": "Placeholder image description",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/764YYMwp/imagen-2025-06-17-122341816.png",
+        "titulo": "Login Screen",
+        "descripcion": "Placeholder image description",
+        "es_portada": false
+      }
+    ],
+    "name": "Document Manager",
+    "description": "Portable program that allows managing documents and project dates for the company. It uses a local encryption system for document storage.",
+    "ribbonLabel": "Commission",
+    "links": [
+      { "label": "GitHub", "url": "https://github.com/Kuuhaku07/Gestion-de-Proyectos" },
+      { "label": "Download", "url": "https://github.com/Kuuhaku07/Gestion-de-Proyectos/blob/main/dist/GestorDocumentos.exe" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "Python" },
+      { "icon": null, "name": "SQlite" },
+      { "icon": null, "name": "Flet" }
+    ]
+  },
+  {
+    "images": [
+      {
+        "preview": "https://i.postimg.cc/SQYRTGPw/imagen-2025-06-17-122832211.png",
+        "titulo": "Login Screen",
+        "descripcion": "Login Screen",
+        "es_portada": true
+      },
+      {
+        "preview": "https://i.postimg.cc/cJ51TKBx/imagen-2025-06-17-122932621.png",
+        "titulo": "Main Project Screen",
+        "descripcion": " User start screen",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/ZqvXtChK/imagen-2025-06-17-123331822.png",
+        "titulo": "Company Registration Form",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/BbPj25Wf/imagen-2025-06-17-123738100.png",
+        "titulo": "Contract List in Modify Contract",
+        "descripcion": " ",
+        "es_portada": false
+      },
+      {
+        "preview": "https://i.postimg.cc/zGc4cT6c/imagen-2025-06-17-123145123.png",
+        "titulo": "PDF Generation",
+        "descripcion": " ",
+        "es_portada": false
+      }
+    ],
+    "name": "Internship at PDVSA GAS: GESCOMET",
+    "description": "Internship consisting of a contract management system for the business and contracts management department of PDVSA GAS.",
+    "links": [
+      { "label": "Report", "url": "https://drive.google.com/file/d/1sWpQoQJ6VPaPVpwpr_ZU6GObxQcBWaff/view?usp=sharing" }
+    ],
+    "technologies": [
+      { "icon": null, "name": "PHP" },
+      { "icon": null, "name": "CSS" },
+      { "icon": null, "name": "Javascript" },
+      { "icon": null, "name": "PostgreSQL" },
+      { "icon": null, "name": "Laragon" }
+    ]
+  }
+]
