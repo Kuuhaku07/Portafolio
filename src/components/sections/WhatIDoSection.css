@@ -1,0 +1,83 @@
+.whatido-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  color: var(--color-text);
+  background-color: rgba(var(--color-background-2-rgb), 0.95);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+  border-bottom: 3px solid var(--color-primary);
+  padding-bottom: 8px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.section-intro {
+  font-size: 1.2rem;
+  margin-bottom: 32px;
+  max-width: 700px;
+  text-align: center;
+  color: var(--color-text-light);
+}
+
+.specialties-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  width: 100%;
+}
+
+.specialty-card {
+  background-color: var(--color-background);
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 24px;
+  flex: 1 1 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+}
+
+.specialty-card:hover {
+  transform: translateY(-8px);
+}
+
+.specialty-icon {
+  font-size: 3rem;
+  color: var(--color-primary);
+  margin-bottom: 16px;
+}
+
+.specialty-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.specialty-description {
+  font-size: 1rem;
+  color: var(--color-text-light);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .specialties-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}

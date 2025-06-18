@@ -7,6 +7,8 @@ import BannerSection from '../components/sections/BannerSection';
 import SkillsSection from '../components/sections/SkillsSection';
 import ProjectSection from '../components/sections/ProjectSection';
 import LanguageSwitcher from '../components/shared/LanguageSwitcher';
+import WhatIDoSection from '../components/sections/WhatIDoSection';
+
 
 const Home = () => {
   const toastRef = useRef(null);
@@ -17,6 +19,7 @@ const Home = () => {
         <LanguageSwitcher />
         <BannerSection />
         <About />
+        <WhatIDoSection />
         <SkillsSection />
         <ProjectSection />
         <ToastContainer ref={toastRef} />

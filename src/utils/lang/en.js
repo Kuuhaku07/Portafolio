@@ -1,13 +1,13 @@
 const en = {
   about: {
     name: "Ulises Lugo",
-    subtitle: "Full Stack Developer",
+    subtitle: "Web Developer",
     description: "I am passionate about creating functional and attractive digital solutions. With extensive knowledge in Python, React, PHP, PostgreSQL, and CSS, and experience in web application development, scripts, and information systems. I enjoy working on both large and small projects, always seeking to improve my skills and knowledge.",
     downloadCV: "Download CV"
   },
   banner: {
     title: "Ulises Lugo",
-    subtitle: "Full Stack Developer"
+    subtitle: "Web Developer"
   },
   skills: {
     title: "Skills and Studies",
@@ -56,6 +56,18 @@ const en = {
   projects: {
     title: "My Projects",
     developedIn: "Developed in"
+  },
+  whatIDo: {
+    title: "What I Do",
+    intro: "I specialize in creating intuitive and efficient digital solutions across multiple domains.",
+    frontendTitle: "Front-End Development",
+    frontendDesc: "Building responsive, performant web interfaces using React, JavaScript, and modern tools.",
+    designTitle: "Interface & Component Design",
+    designDesc: "Designing user-friendly interfaces and reusable components for seamless user experiences.",
+    scriptingTitle: "Scripting & Automation",
+    scriptingDesc: "Creating scripts and automation tools to streamline workflows and data processing.",
+    infoSystemsTitle: "Information Systems",
+    infoSystemsDesc: "Developing robust backend systems and databases to manage and secure data effectively."
   }
 };
 
