@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaDownload, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import { FaDownload, FaGithub, FaLinkedin } from 'react-icons/fa';
 import styles from '../../styles/About.module.css';
 import { useLanguage } from '../../utils/LanguageContext';
 import en from '../../utils/lang/en';
@@ -46,9 +46,6 @@ const About = () => {
               </a>
               <a href="https://www.linkedin.com/in/ulises-lugo-3708a334b/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
-              </a>
-              <a href="https://www.instagram.com/odiseoreo/" target="_blank" rel="noopener noreferrer">
-                <FaInstagram />
               </a>
             </div>
           </div>

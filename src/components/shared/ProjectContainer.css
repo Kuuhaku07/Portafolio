@@ -4,6 +4,7 @@
   background-color: var(--color-background-alt);
   border-radius: var(--border-radius-md);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
 }
 
 .project-container-title {
@@ -28,6 +29,7 @@
   scrollbar-width: thin;
   scrollbar-color: var(--color-primary) var(--color-background-alt);
   background-color: var(--color-background-alt);
+  position: relative;
 }
 
 /* Removed native scrollbar styles to use custom scrollbar component */
@@ -70,4 +72,25 @@
 .project-container-scroll-content > * {
   flex-shrink: 0;
   width: 500px; /* Match max-width of project-card */
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+  .project-container-scroll-content {
+    max-width: 500px; /* Width of one project card */
+  }
+  .project-container-scroll {
+    padding-right: 20px;
+  }
+  /* Gradient fade on right side as scroll indicator */
+  .project-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 100%;
+    pointer-events: none;
+    background: linear-gradient(to left, var(--color-background-alt), transparent);
+  }
 }

@@ -50,7 +50,9 @@ const SkillsSection = () => {
             <h2><FaUniversity className="university-icon" />{lang.skills.studies}</h2>
             <h3>{lang.skills.universityCareer}</h3>
             <div className="university-container">
-              <p>{lang.skills.universityName}</p>
+              <p >{lang.skills.graduationDegree}</p>
+              <p className="graduation-degree">{lang.skills.universityName}</p>
+
             </div>
 
             <button className="modal-open-button" onClick={() => setIsModalOpen(true)}>

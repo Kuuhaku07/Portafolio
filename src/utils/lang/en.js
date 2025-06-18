@@ -14,6 +14,7 @@ const en = {
     studies: "Studies",
     universityCareer: "University Career",
     universityName: "Gran Mariscal de Ayacucho",
+    graduationDegree: "Computer Engineer",
     coursesTitle: "Courses Completed and Recognitions",
     viewCourses: "View Courses",
     languages: "Languages",

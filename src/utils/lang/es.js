@@ -1,4 +1,4 @@
-const es = {
+    const es = {
   about: {
     name: "Ulises Lugo",
     subtitle: "Desarrollador Web",
@@ -12,8 +12,9 @@ const es = {
   skills: {
     title: "Habilidades y Estudios",
     studies: "Estudios",
-    universityCareer: "Carrera Universitaria",
+    universityCareer: "Titulo Universitario",
     universityName: "Universidad Gran Mariscal de Ayacucho",
+    graduationDegree: "Ingeniería en Informática",
     coursesTitle: "Cursos Realizados y Reconocimientos",
     viewCourses: "Ver cursos",
     languages: "Idiomas",
@@ -36,7 +37,6 @@ const es = {
       { skill: "Español", level: 10 },
       { skill: "Inglés", level: 7 }
     ],
-
     toolsList: [
       "Git + GitHub",
       "Consola de comandos",
@@ -70,5 +70,4 @@ const es = {
     infoSystemsDesc: "Desarrollo de sistemas backend robustos y bases de datos para gestionar y proteger datos eficazmente."
   }
 };
-
 export default es;
