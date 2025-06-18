@@ -32,7 +32,7 @@ const BannerSection = () => {
         />
         <div className="banner-text">
           <h1>{language === 'es' ? 'Ulises Lugo' : 'Ulises Lugo'}</h1>
-          <h2>{language === 'es' ? 'Desarrollador Full Stack' : 'Full Stack Developer'}</h2>
+          <h2>{language === 'es' ? 'Desarrollador Web' : 'Web Developer'}</h2>
         </div>
       </div>
     </section>
