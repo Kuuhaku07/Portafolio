@@ -47,6 +47,9 @@ const About = () => {
               <a href="https://www.linkedin.com/in/ulises-lugo-3708a334b/" target="_blank" rel="noopener noreferrer">
                 <FaLinkedin />
               </a>
+              <a href="https://mangobyte.vercel.app" target="_blank" rel="noopener noreferrer" className={styles.mangobyteIcon}>
+                <img src="/mangobyte.svg" alt="Mangobyte" />
+              </a>
             </div>
           </div>
         </div>
