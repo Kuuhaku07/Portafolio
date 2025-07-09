@@ -14,7 +14,7 @@ const About = () => {
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <img
-            src="/images/profile.jpg"
+            src="https://i.postimg.cc/Y2ydsmnm/Imagen-de-Whats-App-2025-07-06-a-las-07-43-50-b181c531.jpg"
             alt={lang.about.name}
             className={styles.profileImage}
             onError={(e) => {
